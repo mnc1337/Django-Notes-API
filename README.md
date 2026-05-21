@@ -25,8 +25,6 @@ Steps:
 1. Unpack a `.7z` archive to any directory you want (good practice is to have prepared environment for project launch).
 2. In directory where archive was unpacked, run next command to initiate migrations (with explicit app notation):
 ```bash
-cd
-mkdir
 python manage.py makemigrations notes_api_app
 ```
 3. Then apply migrations to database with next command (the database will be created):
