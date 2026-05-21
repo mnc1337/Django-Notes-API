@@ -24,16 +24,17 @@ You can manage notes via Django Admin Panel (is you are staff with some permissi
 Steps:  
 1. Unpack a `.7z` archive to any directory you want (good practice is to have prepared environment for project launch).
 2. In directory where archive was unpacked, run next command to initiate migrations (with explicit app notation):
-```shell
+```python
 # test
+print('test')
 python manage.py makemigrations notes_api_app
 ```
 3. Then apply migrations to database with next command (the database will be created):
-```shell
+```python
 python manage.py makemigrations notes_api_app
 ```
 4. And, finally, launch the server via command below:
-```shell
+```python
 python manage.py runserver
 ```
 
