@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes API (logging in)</title>
+    <link rel="stylesheet" href="{{ static('css/login.css') }}">
+</head>
+
+<body>
+    <div id="mainDiv">
+        <h1 id="mainHeader">Log in to your account</h1>
+        <p id="mainParagraph">Log in to your account (if you have one) via form below. Both "Username" and "Password" fields required.</p>
+    </div>
+
+    {% set messages_list = get_messages(request) %}
+    {% if messages_list %}
+        <div class="messages">
+            {% for message in messages_list %}
+                <div class="{{ 'message-' + message.tags if message.tags else 'info' }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <form method="post" id="mainForm" name="mainForm">
+        {{ csrf_input }}
+
+        {% for field in form %}
+            <div class="field-container">
+                {{ field.label_tag() }}
+                {{ field }}
+            </div>
+        {% endfor %}
+
+        <input type="submit" value="Sign in"></input>
+    </form>
+
+    <div id="redirectDiv">
+        <button id="redirectButton">Return to main page</button>
+    </div>
+
+    <script src="{{ static('js/login.js') }}"></script>
+</body>
+
+</html>

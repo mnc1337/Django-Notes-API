@@ -1,0 +1,41 @@
+[02/05/2026]
+- Project structure formed;
+- Created DRF and GraphQL URLs to deal with database;
+- Protection for both of variants (DRF and GraphQL) provided.
+
+
+[06/05/2026]
+- Templates added. Login and logout allowed (commented and probably will not be used in the future).
+
+
+[09/05/2026]
+- Templates changed according to needs (main page of project and page with form for creating a user);
+- Static files (CSS styles and JS scripts added);
+- Environment for Jinja2 (template manager) created.
+
+
+[10/05/2026]
+- Mutations added (creating and deleting notes);
+- Documentation added (Swagger UI and schema);
+- Main page changed (some functional buttons added);
+- Some tests performed (using another IP- and device-client - phone).
+
+
+[11/05/2026]
+- Custom middleware created (within a separated `middleware` module);
+- Thanks to custom middleware, created custom errors handling (within a versatile `errors_page.html` template);
+- Templates particulary refactored according to needs (also for mobile devices);
+- Staticfiles directory created and `WhiteNoise` library used.
+
+
+[14/05/2026]
+- Added opportunity to login in to user's account (therefore, new template, view (custom LoginView) and URL created);
+- Django messages connected to the project;
+- Jinja2 environment changed (`get_messages` method added);
+- `.env` file added (as an external project config).
+
+
+[20/05/2026]
+- All pages of service adapted for mobile devices;
+- Code refactored according to needed style;
+- Project prepared for deployment (refactoring, clearing database, changing virtual environment).

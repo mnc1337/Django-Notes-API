@@ -216,3 +216,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Development logs
+sys_journal.txt
+sys_todo.txt
+
+# Static files (CSS, JS, images), collected by Django
+staticfiles/
+media/
+
+# Additional system files that can be created with images
+Thumbs.db

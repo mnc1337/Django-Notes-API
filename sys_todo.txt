@@ -1,0 +1,5 @@
+!!! IN FUTURE (NEXT VERSIONS):
+
+- Write some tests (file tests.py in app directory).
+- Change background (if needed).
+- Add logout page and make Django messages easier to deal with (at client's side).

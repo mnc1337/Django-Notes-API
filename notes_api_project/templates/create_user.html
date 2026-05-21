@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes API (creating a user)</title>
+    <link rel="stylesheet" href="{{ static('css/create_user.css') }}">
+</head>
+
+<body>
+    <div id="mainDiv">
+        <h1 id="mainHeader">Create a user</h1>
+        <p id="mainParagraph">Create a user via form below. Only "Username" and "Password" fields are required, others
+            are optional.</p>
+    </div>
+
+    <form method="POST" id="mainForm" name="mainForm">
+        {{ csrf_input }}
+
+        {% for field in form %}
+            <div class="field-container">
+                {{ field.label_tag() }}
+                {{ field }}
+            </div>
+        {% endfor %}
+
+        <input type="submit" value="Sign up"></button>
+    </form>
+
+    <div id="redirectDiv">
+        <button id="redirectButton">Return to main page</button>
+    </div>
+
+    <script src="{{ static('js/create_user.js') }}"></script>
+</body>
+
+</html>

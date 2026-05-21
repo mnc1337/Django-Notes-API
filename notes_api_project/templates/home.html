@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes API</title>
+    <link rel="stylesheet" href="{{ static('css/home.css') }}">
+</head>
+
+<body>
+    <div id="mainDiv">
+        <h1 id="mainHeader">Notes API</h1>
+    </div>
+
+    <div id="infoDiv">
+        <h2 id="infoHeader">Some words about this service</h2>
+        <p id="infoParagraph">
+            Keeping your plans organized and private shouldn't be hard.
+            Notes API is a secure service for your personal thoughts.
+            Only you have access to your data.
+            Start your first private note today!
+        </p>
+    </div>
+
+    <div id="logInToYourAccountDiv">
+        <h2 id="logInToYourAccountHeader">Log in to your account</h2>
+        <button type="button" id="logInToYourAccountButton">Log in</button>
+    </div>
+
+    <div id="createUserDiv">
+        <h2 id="createUserHeader">Create a user</h2>
+        <button type="button" id="createUserButton">Create</button>
+    </div>
+
+    <div id="createNoteViaDRFDiv">
+        <h2 id="createNoteViaDRFHeader">Create a note (via REST Framework)</h2>
+        <button type="button" id="createNoteViaDRFButton">Create</button>
+    </div>
+
+    <div id="createNoteViaGraphQLDiv">
+        <h2 id="createNoteViaGraphQLHeader">Create a note (via GraphQL)</h2>
+        <button type="button" id="createNoteViaGraphQLButton">Create</button>
+    </div>
+
+    <div id="checkAllEndpointsDiv">
+        <h2 id="checkAllEndpointsHeader">Check all REST Framework endpoints</h2>
+        <button type="button" id="checkAllEndpointsButton">Check</button>
+    </div>
+
+    <div id="goToAppPageDiv">
+        <h2 id="goToAppPageHeader">Go to home page of app</h2>
+        <button type="button" id="goToAppPageButton">Go</button>
+    </div>
+
+    <script src="{{ static('js/home.js') }}"></script>
+</body>
+
+</html>

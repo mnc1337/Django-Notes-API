@@ -1,0 +1,146 @@
+html {
+    background: none;
+}
+
+body {
+    background: linear-gradient(135deg, rgb(175, 255, 182), rgb(255, 219, 153));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+form::selection {
+    background: transparent;
+}
+
+#mainDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10px;
+}
+
+#mainHeader {
+    font-size: 45px;
+}
+
+#mainHeader,
+label {
+    color: darkblue;
+}
+
+#mainHeader::selection,
+label::selection {
+    background-color: yellow;
+    color: darkred;
+}
+
+#mainParagraph {
+    text-align: center;
+    color: rgb(220, 0, 220);
+    font-size: 20px;
+    width: calc(100vw / 1.1);
+}
+
+#mainParagraph::selection {
+    background-color: yellow;
+    color: darkgreen;
+}
+
+#mainForm {
+    margin: 25px 10px 0 10px;
+    padding: 30px;
+    border: 2px dashed darkblue;
+    border-radius: 10px;
+}
+
+#mainForm div {
+    margin-bottom: 15px;
+}
+
+#mainForm input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+#mainForm label {
+    width: 160px;
+    display: inline-block;
+}
+
+#mainForm input[type="submit"] {
+    margin-top: 30px;
+}
+
+#mainForm input:not([type="submit"]) {
+    width: 225px;
+}
+
+.field-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+input,
+button {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 7px 15px;
+    border: 2px dashed blue;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: bold;
+    transition: transform 0.25s ease-in-out;
+}
+
+input::selection,
+button::selection {
+    color: blue;
+}
+
+input:hover,
+button:hover {
+    cursor: pointer;
+    color: darkblue;
+    box-shadow: 0 0 10px blue;
+    transform: scale(1.1);
+}
+
+#redirectDiv {
+    margin: 50px 0;
+}
+
+@media (max-width: 530px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    #mainForm {
+        width: 70%;
+    }
+
+    .field-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    label {
+        margin-bottom: 7px;
+    }
+}

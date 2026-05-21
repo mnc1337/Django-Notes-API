@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error {{ status }}</title>
+    <link rel="stylesheet" href="{{ static('css/error_page.css') }}">
+</head>
+
+<body>
+    <div id="errorHeaderDiv">
+        <h1 id="errorHeader">Error occurred. Details:</h1>
+    </div>
+
+    <div id="mainTableDiv">
+        <table id="mainTable">
+            <tr>
+                <th>Error status code</th>
+                <th>Error message</th>
+                <th>Error type</th>
+            </tr>
+                <td>{{ status }}</td>
+                <td>{{ message }}</td>
+                <td>{{ type }}</td>
+            </td>
+        </table>
+    </div>
+
+    <div id="redirectDiv">
+        <button id="redirectButton">Return to main page</button>
+    </div>
+
+    <script src="{{ static('js/error_page.js') }}"></script>
+</body>
+
+</html>
