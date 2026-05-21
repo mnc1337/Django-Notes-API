@@ -20,6 +20,24 @@ You can manage notes via Django Admin Panel (is you are staff with some permissi
 
 ---
 
+## Before using API
+Steps:  
+1. Unpack a `.7z` archive to any directory you want (good practice is to have prepared environment for project launch).
+2. In directory where archive was unpacked, run next command to initiate migrations (with explicit app notation):
+```python
+    python manage.py makemigrations notes_api_app
+```
+3. Then apply migrations to database with next command (the database will be created):
+```python
+    python manage.py makemigrations notes_api_app
+```
+4. And, finally, launch the server via command below:
+```python
+    python manage.py runserver
+```
+
+---
+
 ## How to use API
 This API (Application Programming Interface) is simple in using. The main concept consists of the following: you (client) deal with database (server). Notes are stored in database and only **you** know content of **your** notes. Nobody else can access your notes and read information stored there.  
 When you visit API for the first time, you will see a main page and some blocks; by selecting one of them, you'll be able to perform different actions.  
