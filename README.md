@@ -29,11 +29,25 @@ python manage.py makemigrations notes_api_app
 ```
 3. Then apply migrations to database with next command (the database will be created):
 ```bash
-python manage.py makemigrations notes_api_app
+python manage.py migrate
 ```
 4. And, finally, launch the server via command below:
 ```bash
 python manage.py runserver
+```
+5. Additional: if you don't have required libraries, you can use next command (install necessary libraries from `requirements.txt` file):
+```bash
+pip install -r requirements.txt
+```
+or install same libraries, but inside the virtual environment (Bash):
+```bash
+python3 -m venv .venv
+pip install -r requirements.txt
+```
+(CMD/Powershell):
+```shell
+python -m venv .venv
+pip install -r requirements.txt
 ```
 
 ---
