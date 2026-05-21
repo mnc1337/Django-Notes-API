@@ -35,7 +35,7 @@ List of actions:
 
 ## Security
 
-There is a `_security` folder in project structure. It contains an archive with a nested archive and an `.asc` file - digital signature. **To check archive originality**, you can download archive, extract nested archive (`.7z`) and `.asc` file from it to directory **selected by you** and use there the next command in Bash/WSL console: `gpg --verify webprograms_archive.7z.asc webprograms_archive.7z` - first parameter is a digital signature (`.asc` file), second parameter is an archive.
+There is a `_security` folder in project structure. It contains an archive with a nested archive and an `.asc` file - digital signature. **To check archive originality**, you can download archive, extract nested archive (`.7z`) and `.asc` file from it to directory **selected by you** and use there the next command in Bash/WSL console: `gpg --verify django_notes_api.7z.asc django_notes_api.7z` - first parameter is a digital signature (`.asc` file), second parameter is an archive.
 
 ---
 
