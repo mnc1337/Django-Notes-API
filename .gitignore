@@ -218,12 +218,12 @@ __marimo__/
 .streamlit/secrets.toml
 
 # Development logs
-sys_journal.txt
-sys_todo.txt
+django_notes_api/sys_journal.txt
+django_notes_api/sys_todo.txt
 
 # Static files (CSS, JS, images), collected by Django
-staticfiles/
-media/
+django_notes_api/staticfiles/
+django_notes_api/media/
 
 # Additional system files that can be created with images
-Thumbs.db
+django_notes_api/img/Thumbs.db

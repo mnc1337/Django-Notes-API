@@ -47,7 +47,7 @@ button:hover {
 #createUserDiv,
 #createNoteViaDRFDiv,
 #createNoteViaGraphQLDiv,
-#checkAllEndpointsDiv,
+#seeAllEndpointsDiv,
 #goToAppPageDiv {
     display: flex;
     flex-direction: column;
@@ -71,7 +71,7 @@ button:hover {
 #createUserHeader,
 #createNoteViaDRFHeader,
 #createNoteViaGraphQLHeader,
-#checkAllEndpointsHeader,
+#seeAllEndpointsHeader,
 #goToAppPageHeader {
     text-align: center;
     color: rgb(220, 0, 0);
@@ -83,7 +83,7 @@ button:hover {
 #createUserHeader::selection,
 #createNoteViaDRFHeader::selection,
 #createNoteViaGraphQLHeader::selection,
-#checkAllEndpointsHeader::selection,
+#seeAllEndpointsHeader::selection,
 #goToAppPageHeader::selection {
     background-color: yellow;
     color: darkblue;

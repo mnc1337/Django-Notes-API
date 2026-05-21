@@ -4,7 +4,7 @@ const routes = {
     "createUserButton": "/create_user",
     "createNoteViaDRFButton": "/api/notes",
     "createNoteViaGraphQLButton": "/graphql",
-    "checkAllEndpointsButton": "/api/docs",
+    "seeAllEndpointsButton": "/api/docs",
     "goToAppPageButton": "/app",
     "logInToYourAccountButton": "/login",
 };
@@ -13,7 +13,7 @@ const buttons = [
     document.querySelector("#createUserButton"),
     document.querySelector("#createNoteViaDRFButton"),
     document.querySelector("#createNoteViaGraphQLButton"),
-    document.querySelector("#checkAllEndpointsButton"),
+    document.querySelector("#seeAllEndpointsButton"),
     document.querySelector("#goToAppPageButton"),
     document.querySelector("#logInToYourAccountButton"),
 ];
