@@ -39,14 +39,16 @@ python manage.py runserver
 ```bash
 pip install -r requirements.txt
 ```
-or install same libraries, but inside the virtual environment (Bash):
+or install same libraries, but inside the virtual environment (via Bash):
 ```bash
 python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
-(CMD/Powershell):
+(via CMD/Powershell):
 ```shell
 python -m venv .venv
+.\.venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
